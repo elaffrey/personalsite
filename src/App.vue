@@ -1,21 +1,21 @@
 <template>
   <v-app>
+    <app-bar />
     <v-content>
       <v-container>
         <router-view />
       </v-container>
     </v-content>
-    <app-footer />
   </v-app>
 </template>
 
 <script>
-import AppFooter from '@/components/AppFooter.vue';
+import AppBar from '@/components/AppBar.vue';
 
 export default {
   name: 'App',
   components: {
-    AppFooter,
+    AppBar,
   },
   data: () => ({}),
 };
